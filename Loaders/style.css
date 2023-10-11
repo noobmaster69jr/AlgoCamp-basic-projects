@@ -1,0 +1,196 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+
+
+.loader1{
+    height: 5rem;
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.loader1 > div{
+    border: 3px solid red;
+    height: 4rem;
+     width: 4rem;
+     border-radius: 50%;
+     border-top: 3px solid rgb(245, 237, 237);
+     animation: loader1 0.7s linear 0s infinite;
+    animation-direction: normal;
+}
+
+@keyframes loader1 {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+.loader2{
+    height: 5rem;
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.loader2 > div{
+    border: 3px solid red;
+    height: 4rem;
+     width: 4rem;
+     border-radius: 50%;
+     border-top: 3px solid rgb(245, 237, 237);
+     border-bottom: 3px solid rgb(245, 237, 237);
+     animation: loader2 0.7s linear 0s infinite;
+    animation-direction: normal;
+}
+
+@keyframes loader2 {
+    from{
+        transform: rotate(0deg);
+    
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+.loader3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    height: 5rem;
+}
+
+.loader3 div {
+    background-color: red;
+    height: 100px;
+    width: 30px;
+}
+.loader3 .first {
+    animation: expander 0.8s linear infinite;
+    animation-delay: 0.4s;
+}
+.loader3 .second {
+    animation: expander 0.8s linear infinite;
+    animation-delay: 0.6s;
+}
+.loader3 .third {
+    animation: expander 0.8s linear infinite;
+    animation-delay: 0;
+}
+
+@keyframes expander {
+    0% {
+        height: 100px;
+    }
+
+    50% {
+        height: 150px;
+    }
+
+    100% {
+        height: 100px;
+    }
+}
+
+
+.loader4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+}
+
+.loader4 > div {
+    width: 2rem;
+    height: 2rem;
+    border: 5px solid grey; 
+    border-radius: 50%;
+    animation: drop 2s linear infinite;
+}
+
+@keyframes drop {
+    0% {
+        width: 2rem;
+        height: 2rem;
+        border-color: grey;
+        opacity: 0;
+    }
+
+    4.5% {
+        width: 2rem;
+        height: 2rem;
+        border-color: grey;
+        opacity: 0;
+    }
+    5% {
+        width: 2rem;
+        height: 2rem;
+        border-color: grey;
+        opacity: 1;
+    }
+
+    35% {
+        opacity: 0;
+    }
+
+    50% {
+        width: 3rem;
+        height: 3rem;
+        border-color: #f7f6f5;
+        opacity: 1;
+    }
+
+    53% {
+        width: 3rem;
+        height: 3rem;
+        border-color: #f7f6f5;
+        opacity: 1;
+    }
+
+    54% {
+        width: 3rem;
+        height: 3rem;
+        border-color: #f7f6f5;
+        opacity: 0;
+    }
+
+    75% {
+        width: 3.8rem;
+        height: 3.8rem;
+        border-color: #fcfbfa;
+        opacity: 1;
+    }
+    79% {
+        width: 3.8rem;
+        height: 3.8rem;
+        border-color: #fcfbfa;
+        opacity: 1;
+    }
+
+    80% {
+        width: 3.8rem;
+        height: 3.8rem;
+        border-color: #fcfbfa;
+        opacity: 0;
+    }
+
+    100% {
+        width: 4rem;
+        height: 4rem;
+        border-color: #faf5f5;
+        opacity: 1;
+    }
+}
