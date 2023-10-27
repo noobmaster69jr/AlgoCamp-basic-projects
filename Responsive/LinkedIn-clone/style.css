@@ -1,0 +1,723 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    color: #495057;
+}
+
+::-webkit-scrollbar {
+    -display: none;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+:root{
+     --color-primary: #7371fc;
+    --color-secondary: #a594f9;
+    --primary-background-color: #cdc1ff;
+    --secondary-background-color: #e5d9f2;
+    --third-background-color: #a594f9;
+    --color-white: #fff;
+    --color-dark: #000;
+    --border-color: #adb5bd;
+    --section-text-color: #343a40;
+    --section-text-border: #343a40;
+
+    --linear-gradient-section: linear-gradient(90deg, rgba(255, 255, 255, 1) 35%, rgba(229, 217, 242, 1) 35%);
+    --container-size-lg: 60%;
+    --container-size-md: 90%;
+    --container-size-sm: 95%;
+
+    --transition-primary: all 300ms linear;
+}
+
+.container {
+    width: var(--container-size-lg);
+    margin: 0rem auto;
+}
+
+button{
+    background-color: transparent;
+    cursor: pointer;
+}
+
+i{
+    cursor: pointer;
+}
+
+/*========Header start=======*/
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0rem;
+}
+
+.logo{
+    display: flex;
+    align-items:center;
+    gap: .2rem;
+}
+
+.logo img{
+    width: 3.5rem;
+}
+
+.logo span{
+    font-size: 3.3rem;
+    font-weight: 600;
+    color: #0a66c2;
+}
+
+.nav-items .nav-contents{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding-right: 2rem;
+    border-right: 1px solid var(--border-color);
+}
+
+ul li i{
+    font-size: 1.8rem;
+}
+
+ul li{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+ul li:hover a,
+ul li:hover i{
+    color: #000;
+}
+
+.nav-items {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.join-button{
+    display:flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.join-button button{
+    font-weight: 500;
+    background-color: var(--color-white);
+    font-size: 1.7rem;
+}
+
+.join-button button:last-child,
+.join-button button:first-child{
+    padding: 1rem 2rem;
+    border-radius: 2.5rem;
+    transition: var(--transition-primary);
+}
+
+.join-button button:last-child{
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.join-button button:first-child:hover {
+    background-color: var(--secondary-background-color);
+}
+
+/*======== header completed ======= */
+
+.main-section {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    padding: 3.5rem 0rem;
+    overflow: visible;
+}
+
+.main-section .main-text-content .heading h1{
+    font-size: 5rem;
+    font-weight: 400;
+    color: var(--color-primary);
+}
+
+.main-section .main-text-content .heading {
+    margin-bottom: 3.5rem;
+}
+
+.main-image img{
+    width: 140%;
+}
+
+.hover-section{
+    display: grid;
+    width: max-content;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+.right-side-flex-content:hover {
+    box-shadow: 4px 4px 10px var(--third-background-color);
+}
+
+.right-side-flex-content {
+    display: flex;
+    width: 100%;
+    gap: 9rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.4rem 1.6rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.7rem;
+}
+
+
+.right-side-flex-content p,
+.right-side-flex-content i {
+    font-size: 2rem;
+}
+
+
+.right-side-flex-content i {
+    color: var(--color-primary);
+}
+
+
+/*========== Main completed ==========*/
+
+/*========== Section one start ===========*/
+
+#section-one{
+    background-color: var(--primary-background-color);
+}
+
+.inside-section-one,
+.inside-section-two,
+.inside-section-three {
+    display: grid;
+    grid-template-columns: 37% 57%;
+    gap: 6%;
+    padding: 7rem 0rem;
+}
+
+.left-side-section-text span {
+    font-size: 4rem;
+}
+
+.top-text span {
+    font-size: 2rem;
+}
+
+.top-text {
+    padding-bottom: 1.5rem;
+}
+
+.right-side-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.flex-line {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: .8rem;
+
+}
+
+.flex-line .active {
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    font-weight: 500;
+}
+
+.flex-line p {
+    font-size: 2rem;
+    color: #343a40;
+    font-weight: 500;
+    padding: 1.4rem 1.8rem;
+    border-radius: 3.5rem;
+    border: 1px solid var(--section-text-border);
+}
+
+/*========== Section one completed ==========*/
+
+
+
+/*========== Section two start ============*/
+
+/* TODO: ===> NO CSS IN SECTION TWO */
+
+/*========== Section two completed ==========*/
+
+
+
+/*========== Section three start ============*/
+
+#section-three {
+    background-color: var(--primary-background-color);
+}
+
+/*========== Section three completed ==========*/
+
+
+/*========== Section four start ============*/
+
+#section-four {
+    background-color: var(--secondary-background-color);
+}
+
+.inside-section-four {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10rem 0rem;
+    place-items: center;
+}
+
+.right-side-image {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.right-side-image img{
+    width: 45rem;
+}
+
+.left-side-text h3 {
+    font-size: 4.5rem;
+    font-weight: 500;
+    color: var(--color-primary);
+}
+
+.left-side-text p {
+    font-size: 2.5rem;
+}
+
+.button-slider {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    justify-content: flex-end;
+}
+
+.previous, .next {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.button-slider button {
+    font-size: 1.8rem;
+    padding: .8rem 1.3rem;
+    border-radius: 3rem;
+    transition: var(--transition-primary);
+}
+
+.button-slider i {
+    font-size: 1.7rem;
+    transition: var(--transition-primary);
+}
+
+.previous button {
+    cursor: not-allowed;
+}
+
+.next button:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.next button:hover i {
+    color: var(--color-white);
+}
+
+
+/*========== Section four completed ==========*/
+
+/*========== Section five start ==========*/
+
+.inner-section-five {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    gap: 10%;
+    padding: 10rem 0rem;
+}
+
+.section-five-right-side,
+.section-five-left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.section-five-left-side .inner-img img,
+.section-five-right-side .inner-img img {
+    width: 40rem;
+}
+
+.inner-text span {
+    font-size: 4rem;
+    font-weight: 300;
+    color: var(--color-primary);
+}
+
+.inner-button button {
+    font-size: 2.2rem;
+    border: 1px solid red;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    border: 1px solid var(--border-color);
+    transition: var(--transition-primary);
+
+
+}
+
+.inner-button button:hover {
+    background-color: var(--primary-background-color);
+}
+
+#option {
+    padding: 1rem 0.5rem;
+    border: 1px solid var(--border-color);
+    font-size: 2.3rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+/*========== Section five completed ========*/
+
+
+/*=========== Section six start ===========*/
+
+#section-six {
+    background: var(--linear-gradient-section);
+}
+
+.half-background {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10rem 0rem;
+    align-items: center;
+}
+
+.inner-half-text {
+    text-align: center;
+}
+
+.inner-half-text p {
+    font-size: 3rem;
+    color: var(--color-primary);
+}
+
+/*========== Section six completed ===========*/
+
+
+/*========== Section seven start ==========*/
+
+ #section-seven {
+    background-image: url(https://i.postimg.cc/63WjWMmk/bottom-bg.png);
+    height: 92vh;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+.inner-background-bottom-side {
+    padding-top: 18rem;
+}
+
+
+.bottom-inner-text {
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+}
+
+.bottom-button button {
+    padding: 1.5rem 2.5rem;
+    background-color: var(--color-primary);
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--color-white);
+    border-radius: 3.5rem;
+} 
+
+/*========== Section seven completed =========*/
+
+/*========= Footer start ==========*/
+footer {
+    background-color: var(--primary-background-color);
+}
+
+.inside-footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 3rem;
+
+}
+
+.footer-logo span {
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: #0a66c2;
+}
+
+.footer-logo img {
+    width: 2.5rem;
+}
+
+.grid-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.grid-column span {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-dark);
+}
+
+.grid-column ul {
+    text-align: center;
+}
+
+.grid-column ul li {
+    text-align: start;
+    font-size: 1.4rem;
+    line-height: 2;
+}
+
+.grid-column ul li:hover {
+    text-decoration: underline;
+}
+/*========== Footer end ==========*/
+
+/*========= Bottom Footer start =======*/
+
+
+.inner-footer-bottom-text img {
+    width: 3rem;
+}
+
+.inner-footer-bottom-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0rem;
+}
+
+.bottom-image-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-image-text>span {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--color-dark);
+}
+
+.inner-footer-bottom-text span {
+    font-size: 1.2rem;
+}
+
+.inner-footer-bottom-text span:hover a {
+    text-decoration: underline;
+}
+
+
+/*========= Bottom Footer end =======*/
+
+
+@media screen and (max-width:1400px) {
+
+    html,
+    body {
+        font-size: 8px;
+    }
+
+}
+
+@media screen and (max-width:1150px) {
+    iframe {
+        width: 100%;
+    }
+
+    #section-seven {
+        height: 80vh;
+        background-size: cover;
+
+    }
+
+    .container {
+        width: var(--container-size-md);
+    }
+
+    .main-image img {
+        width: 110%;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+
+    html,
+    body {
+        font-size: 6px;
+    }
+
+    .grid-column span {
+        font-size: 1.9rem;
+    }
+
+    .grid-column ul li {
+        font-size: 1.8rem;
+    }
+
+    .inner-footer-bottom-text span {
+        font-size: 1.5rem;
+        line-height: 2;
+    }
+
+    .inner-footer-bottom-text {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+}
+
+@media screen and (max-width:620px) {
+    html.body {
+        font-size: 5px;
+    }
+
+
+}
+
+@media screen and (max-width:510px) {
+    .container {
+        width: var(--container-size-sm);
+    }
+
+    .main-section {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .hover-section {
+        width: 55%;
+        margin: 0rem auto;
+
+    }
+
+    .main-section .main-text-content .heading h1 {
+        text-align: center;
+    }
+
+    .main-image img {
+        width: 100%;
+    }
+
+    .inside-section-one,
+    .inside-section-two,
+    .inside-section-three {
+        grid-template-columns: 1fr;
+    }
+
+    .inside-section-four {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4rem;
+    }
+
+    .inner-section-five {
+        grid-template-columns: 1fr;
+        gap: 7%;
+    }
+
+    .section-five-right-side,
+    .section-five-left-side {
+        text-align: center;
+    }
+
+    .half-background {
+        gap: 1%;
+        grid-template-columns: 1fr;
+    }
+
+    .inside-footer {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 4rem;
+    }
+
+    .bottom-inner-text {
+        font-size: 3.4rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .nav-items .nav-contents {
+        display: none;
+    }
+
+    .hover-section {
+        width: 83%;
+    }
+
+    .inside-footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bottom-inner-text {
+        font-size: 2.8rem;
+    }
+
+    #section-seven {
+        height: 50vh;
+    }
+
+    .bottom-button button {
+        padding: 1.1rem 2.1rem;
+        font-size: 1.7rem;
+    }
+
+    .inner-background-bottom-side .bottom-button {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:310px) {
+    .bottom-inner-text {
+        font-size: 2.6rem;
+    }
+
+    .bottom-inner-text .bottom-button {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:310px) {
+.right-side-image img {
+    width: 33rem;
+}
+}
