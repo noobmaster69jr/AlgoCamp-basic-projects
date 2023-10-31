@@ -1,0 +1,81 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding:0;
+}
+.image{
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    position:relative;
+}
+
+.image div{
+    position:absolute;
+    top: 50%;
+    width:100%;
+    text-align:center;
+    font-size: 2.5rem;
+    font-weight:bolder;
+     letter-spacing: 8px;
+     text-transform: uppercase;
+}
+
+.first-image div span{
+    background-color: rgb(195, 214, 195);
+    padding: 1rem 2rem;
+    color: rgb(31, 89, 197);
+}
+
+.first-image{
+    min-height: 500px;
+    opacity: 0.8;
+    background-image: url('img/pexels-aalekh-deval-9153468.jpg')
+}
+
+.second-image div span{
+    background-color: rgb(250, 247, 242);
+    padding: 1rem 2rem;
+    color: darkgreen;
+}
+
+.second-image{
+    min-height: 500px;
+    opacity: 0.8;
+    background-image: url('img/alessandro-bogliari-oDs_AxeR5g4-unsplash.jpg')
+}
+
+.third-image{
+    min-height:500px;
+    opacity: 0.8;
+    background-image: url('img/vicky-adams-gywHscPZwMM-unsplash.jpg')
+}
+.third-image div span{
+    background-color: black;
+    padding: 1rem 2rem;
+    color: orange;
+}
+.fourth-image{
+    background-image: url("img/pexels-aalekh-deval-9153468.jpg");
+    opacity: 0.8;
+    min-height: 500px;
+
+}   
+.fourth-image div span{
+    background-color: rgb(190, 190, 190);
+    padding: 1rem 2rem;
+    color: blue;
+}
+
+section {
+    text-align: center;
+    padding: 3rem 4rem;
+    font-size: 1.5rem;
+}
