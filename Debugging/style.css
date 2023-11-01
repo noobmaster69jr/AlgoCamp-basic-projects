@@ -75,6 +75,8 @@ main {
 
 /* Bug #4 (Very Hard) */
 footer {
+    margin: 0 auto;
     margin-top: auto;
     
+
 }
