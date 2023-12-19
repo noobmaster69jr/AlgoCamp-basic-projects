@@ -1,0 +1,14 @@
+.container{
+    padding: 3rem;
+    border: 1px solid orange;
+    background-color: yellow;
+    display: grid;
+    grid-template-rows: 2fr 4fr;
+    grid-template-columns: 1fr 2fr 1fr;
+   
+}
+
+.child {
+    padding : 20px;
+    border: 2px solid purple;
+}

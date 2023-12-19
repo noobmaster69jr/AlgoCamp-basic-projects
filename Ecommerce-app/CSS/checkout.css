@@ -1,0 +1,44 @@
+.checkout-details {
+    flex-basis: 65%;
+    margin-right: 5%;
+}
+
+.price-details{
+    background-color: white;
+    flex-basis: 30%;
+    border-radius: 7px;
+    box-shadow: 0px 2px 2px grey;
+    align-self: start;
+    top: 10px;
+    position: sticky;
+}
+
+.price-details .price-details-title {
+    font-size: 1rem;
+    color: rgb(138, 134, 134);
+    font-weight:500;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgb(216, 213, 213);
+}
+
+.price-details .price-details-listings {
+     border-bottom: 1px dotted rgb(202, 200, 200);
+}
+
+.price-details .price-details-listings .price-listings-item {
+    color : rgb(114, 111, 111);
+    font-size: 1rem;
+
+}
+.price-details .total-card {
+    color: rgb(65, 64, 64);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(173, 169, 169);
+}
+
+.price-details .savings-card {
+    color: rgb(97, 224, 97);
+    font-size: 1rem;
+    font-weight: bold;
+}
